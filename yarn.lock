@@ -1095,7 +1095,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@17.0.37":
+"@types/react@*", "@types/react@^17.0.37":
   version "17.0.37"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.37.tgz#6884d0aa402605935c397ae689deed115caad959"
   integrity sha512-2FS1oTqBGcH/s0E+CjrCCR9+JMpsu9b69RTFO+40ua43ZqP5MmQ4iUde/dMjWR909KxZwmOQIFq6AV6NjEG5xg==
@@ -5178,6 +5178,11 @@ proper-lockfile@^4.1.1:
     retry "^0.12.0"
     signal-exit "^3.0.2"
 
+proxy-compare@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/proxy-compare/-/proxy-compare-2.0.2.tgz#343e624d0ec399dfbe575f1d365d4fa042c9fc69"
+  integrity sha512-3qUXJBariEj3eO90M3Rgqq3+/P5Efl0t/dl9g/1uVzIQmO3M+ql4hvNH3mYdu8H+1zcKv07YvL55tsY74jmH1A==
+
 proxy-from-env@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
@@ -6216,7 +6221,7 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@4.5.4:
+typescript@^4.5.4:
   version "4.5.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.4.tgz#a17d3a0263bf5c8723b9c52f43c5084edf13c2e8"
   integrity sha512-VgYs2A2QIRuGphtzFV7aQJduJ2gyfTljngLzjpfW9FoYZF6xuw1W0vW9ghCKLfcWrCFxK81CSGRAvS1pn4fIUg==
@@ -6298,6 +6303,13 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+valtio@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/valtio/-/valtio-1.2.7.tgz#0274491a8919afce5f1a2fee2f08f9bdad90d5f8"
+  integrity sha512-vm9XwsndXVt+XTFwmb2Myo2p319Ssu/SDVRjBhDGQcNi6Epc8g0Pf/QaWAr67A3P1x4b1NApjK7qHjdL1WpuaQ==
+  dependencies:
+    proxy-compare "2.0.2"
 
 vm-browserify@1.1.2:
   version "1.1.2"
