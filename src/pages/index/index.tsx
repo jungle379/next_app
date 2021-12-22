@@ -1,8 +1,11 @@
 import type { VFC } from "react";
+import { proxy } from "valtio";
+
+const state = proxy({ count: 0, text: "hello" });
 
 export const Index: VFC = () => {
   const handleClick = () => {
-    window.alert("Hello, World!");
+    ++state.count, 1000;
   };
 
   return (
