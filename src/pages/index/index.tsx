@@ -1,18 +1,20 @@
 import type { VFC } from "react";
-import { proxy } from "valtio";
+import { proxy, useSnapshot } from "valtio";
 
-const state = proxy({ count: 0, text: "hello" });
+const countState = proxy({ count: 0 });
 
 export const Index: VFC = () => {
+  const snap = useSnapshot(countState);
+
   const handleClick = () => {
-    ++state.count, 1000;
+    countState.count++;
   };
 
   return (
     <div>
-      <h2>Index</h2>
+      <h2 className="text-5xl">{snap.count}</h2>
       <button className="p-2" onClick={handleClick}>
-        Click me!
+        Count up!
       </button>
     </div>
   );
